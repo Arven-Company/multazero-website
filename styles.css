@@ -1156,3 +1156,46 @@ body {
     background-color: var(--blue-ribbon-1);
     color: var(--blue-ribbon-7);
 }
+/* Modals */
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+}
+
+.modal-content {
+    background: var(--surface-elevated);
+    width: 90%;
+    max-width: 600px;
+    max-height: 85vh;
+    border-radius: var(--radius-lg);
+    padding: var(--space-32);
+    position: relative;
+    overflow-y: auto;
+    box-shadow: var(--shadow-lg);
+    color: var(--text-primary);
+}
+
+.modal-content h2 {
+    margin-bottom: var(--space-16);
+}
+
+.close {
+    position: absolute;
+    top: var(--space-16);
+    right: var(--space-24);
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: color 200ms ease;
+}
+
+.close:hover {
+    color: var(--blue-ribbon-6);
+}
